@@ -25,7 +25,7 @@ public class LendingLibrary {
 	}
 	
 	//prompts the program user to enter all five expected values required to instantiate 
-	//a new User()—there is no requirement to check for any other possibilities
+	//a new User()â€”there is no requirement to check for any other possibilities
 	//(such as the possibility that the user doesn't enter their age).
 	public User makeUser(int id, String firstName, String lastName, String address, int age) {
 		System.out.println("Enter ID");
@@ -77,7 +77,7 @@ public class LendingLibrary {
 	
 	//search user
 	public User findUser(String firstName, String lastName) {
-		for (User user : userReg) {
+		for(User user : userReg) {
 		String firstNameCheck = user.getFirstName();
 		String lastNameCheck = user.getLastName();
 			if(firstNameCheck.equals(firstName) && lastNameCheck.equals(lastName)) {
